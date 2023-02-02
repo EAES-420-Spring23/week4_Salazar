@@ -56,10 +56,13 @@ ggplot(data = plastic_waste,
 
 ### Exercise 5
 
-Remove this text, and add your answer for Exercise 5 here.
+The lower the capita the less pollutive the country.
 
 ```{r plastic-waste-mismanaged}
-# insert code here
+ggplot(data = plastic_waste, 
+       mapping = aes(x =  mismanaged_plastic_waste_per_cap, 
+                     y = plastic_waste_per_cap)) +
+  geom_point()
 ```
 
 ### Exercise 6
