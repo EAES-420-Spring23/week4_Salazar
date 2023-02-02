@@ -70,7 +70,10 @@ ggplot(data = plastic_waste,
 Remove this text, and add your answer for Exercise 6 here.
 
 ```{r plastic-waste-mismanaged-continent}
-# insert code here
+ggplot(data = plastic_waste, 
+       mapping = aes(x =  mismanaged_plastic_waste_per_cap, 
+                     y = plastic_waste_per_cap, color = )) +
+  geom_point()
 ```
 
 ### Exercise 7
