@@ -45,10 +45,13 @@ Color and fill are examples of an aesthetic while the alpha is a modification of
 
 ### Exercise 4
 
-Remove this text, and add your answer for Exercise 4 here.
+Data visualization is much more clearer with violin plots.
 
 ```{r plastic-waste-violin}
-# insert code here
+ggplot(data = plastic_waste, 
+       mapping = aes(x = continent, 
+                     y = plastic_waste_per_cap)) +
+  geom_violin()
 ```
 
 ### Exercise 5
