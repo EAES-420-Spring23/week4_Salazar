@@ -41,7 +41,7 @@ ggplot(data = plastic_waste,
 
 ### Exercise 3
 
-Remove this text, and add your answer for Exercise 3 here.
+Color and fill are examples of an aesthetic while the alpha is a modification of aesthetics that take place after it's coded in.
 
 ### Exercise 4
 
