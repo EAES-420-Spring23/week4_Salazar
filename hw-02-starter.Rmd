@@ -20,13 +20,16 @@ wat_san <- read_csv("data/water-and-sanitation.csv")
 
 ### Exercise 2
 
-Looks like water samples taken from different locations with in different countries.
+Looks like water samples taken from the same location in different countries.
+
 ### Exercise 3
 
-Insert your answer here...
+Looks like people have been pooping less outside over the years. The bars get thinner over time.
 
 ```{r no-sanitation-years}
-
+ggplot(data = wat_san, 
+       mapping = aes(x = sanitation_none,)) +
+  geom_histogram()+ facet_grid(~Year)
 ```
 
 ### Exercise 4
