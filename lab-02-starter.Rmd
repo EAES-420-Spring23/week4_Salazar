@@ -96,8 +96,19 @@ ggplot(data = plastic_waste,
 
 ### Exercise 8
 
-Remove this text, and add your answer for Exercise 8 here.
+Continents like Africa are not as wasteful. The regions have their waste per capita cap out at .75 popuation and goes on a downward trend.
 
 ```{r recreate-viz}
-# insert code here
+plastic_waste %>% 
+mutate(coastal_pop_prop = coastal_pop / total_pop) %>%
+filter(plastic_waste_per_cap < 3) %>%
+ggplot(
+       mapping = aes(x =  coastal_pop_prop, 
+                     y = plastic_waste_per_cap, color = continent )) +
+  geom_point()+ 
+  geom_smooth(color= "black")+
+  labs(title= "Plastic Waste VS Costal Population Proportion by Continent",  
+       x= "Coatal population proporton", 
+       y= "Plastic Waste per Capita") 
+  
 ```
