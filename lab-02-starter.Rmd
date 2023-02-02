@@ -19,10 +19,14 @@ plastic_waste <- read_csv("data/plastic-waste.csv")
 
 ### Exercise 1
 
-Remove this text, and add your answer for Exercise 1 here.
+They all have density average around 5 units.
 
 ```{r plastic-waste-continent}
-# insert code here
+ggplot(data = plastic_waste, 
+       mapping = aes(x = plastic_waste_per_cap, 
+                     color = continent, 
+                     fill = continent)) +
+  geom_density(alpha = 0.7)
 ```
 
 ### Exercise 2
