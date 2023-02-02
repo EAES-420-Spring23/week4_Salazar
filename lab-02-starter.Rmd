@@ -78,14 +78,20 @@ ggplot(data = plastic_waste,
 
 ### Exercise 7
 
-Remove this text, and add your answer for Exercise 7 here.
+Yes and they appear to be similar as well.
 
 ```{r plastic-waste-population-total}
-# insert code here
+ggplot(data = plastic_waste, 
+       mapping = aes(x =   plastic_waste_per_cap, 
+                     y =  total_pop, color = continent )) +
+  geom_point()
 ```
 
 ```{r plastic-waste-population-coastal}
-# insert code here
+ggplot(data = plastic_waste, 
+       mapping = aes(x =  coastal_pop, 
+                     y = plastic_waste_per_cap, color = continent )) +
+  geom_point()
 ```
 
 ### Exercise 8
