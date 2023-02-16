@@ -4,7 +4,7 @@ author: "Jesus Salazar"
 date: "2/2/2023"
 output: github_document
 ---
-
+#interpretations for ex 6 and 7
 ## Load packages and data
 
 ```{r load-packages, message=FALSE}
@@ -110,5 +110,6 @@ ggplot(
   labs(title= "Plastic Waste VS Costal Population Proportion by Continent",  
        x= "Coatal population proporton", 
        y= "Plastic Waste per Capita") 
-  
+ 
 ```
+
