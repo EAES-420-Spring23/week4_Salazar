@@ -14,7 +14,7 @@ wat_san <- read_csv("data/water-and-sanitation.csv")
 
 ## Exercises
 
-### Exercise 1
+### Exercise 1 -.5
 
 5118
 
@@ -32,7 +32,7 @@ ggplot(data = wat_san,
   geom_histogram()+ facet_wrap(~Year)
 ```
 
-### Exercise 4
+### Exercise 4 -.5
 
 For the year 2000, Cambodia had the least water infrastucture and had the highest no sanitation service. Eritrea  and Niger had low water infrastucter and high no sanitation services. There seems to be a correlation. 
 
@@ -58,8 +58,8 @@ Most of the countries changed but Niger went from second unsanitary to first.
 wat_san %>% filter(Year== 2020) %>% arrange(desc(sanitation_none))
 ```
 
-### Exercise 7
-
+### Exercise 7 -.5
+ 
 As the years go by, both values go down drastically. Sanitatin none and water none are linked.
 
 ```{r progress-summary, echo = F}
